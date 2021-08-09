@@ -1,5 +1,6 @@
 
 import RafRepeater from './rafrepeater'
+import WorkQueue from './workqueue'
 
 
 class Working {
@@ -9,5 +10,9 @@ class Working {
 
   raf(thinkFunc, options) {
     return new RafRepeater(thinkFunc, options);
+  }
+
+  get workqueue() {
+    return WorkQueue;
   }
 }
