@@ -1,7 +1,7 @@
 
 import RafRepeater from './rafrepeater'
 import WorkQueue from './workqueue'
-
+import TroubleMaker from './troublemaker'
 
 class Working {
   constructor() {
@@ -14,5 +14,9 @@ class Working {
 
   get workqueue() {
     return WorkQueue;
+  }
+
+  get webjobs() {
+    return TroubleMaker;
   }
 }
